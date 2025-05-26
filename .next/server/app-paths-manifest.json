@@ -1,3 +1,7 @@
 {
-  "/brands/add/page": "app/brands/add/page.js"
+  "/dashboard/brands/page": "app/dashboard/brands/page.js",
+  "/dashboard/cars/page": "app/dashboard/cars/page.js",
+  "/dashboard/cars/[id]/page": "app/dashboard/cars/[id]/page.js",
+  "/dashboard/brands/add/page": "app/dashboard/brands/add/page.js",
+  "/dashboard/brands/[id]/page": "app/dashboard/brands/[id]/page.js"
 }
