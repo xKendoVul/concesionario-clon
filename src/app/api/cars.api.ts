@@ -16,7 +16,7 @@ export async function addCar(carData: CarData) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MjM0MTE1LCJleHAiOjE3NDgyNDEzMTV9.dKuXmJwz9n5MhrHfv1wZLJLtzLl2BnxLJ9PpM6Jd_7U`
+      'Authorization': `Bearer <dejar token aqui>`
     },
     body: JSON.stringify(carData),
   });
@@ -28,7 +28,7 @@ export async function getCarById(carId: number): Promise<CarData> {
   const res = await fetch(`http://localhost:4000/api/v1/cars/${carId}`, {
     method: "GET",
     headers: {
-      'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MjM0MTE1LCJleHAiOjE3NDgyNDEzMTV9.dKuXmJwz9n5MhrHfv1wZLJLtzLl2BnxLJ9PpM6Jd_7U`
+      'Authorization': `Bearer <dejar token aqui>`
     }
   });
   return await res.json();
@@ -39,7 +39,7 @@ export async function updateCar(carData: CarData) {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
-      'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MjM0MTE1LCJleHAiOjE3NDgyNDEzMTV9.dKuXmJwz9n5MhrHfv1wZLJLtzLl2BnxLJ9PpM6Jd_7U`
+      'Authorization': `Bearer <dejar token aqui>`
     },
     body: JSON.stringify(carData),
   });
@@ -53,7 +53,7 @@ export async function deleteCar(CarId: number) {
     // Add Authorization header if you have a token, e.g. 'Bearer <token>'
     // headers: { "Authorization": "Bearer <token>" }
     headers: { 
-      'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MjM0MTE1LCJleHAiOjE3NDgyNDEzMTV9.dKuXmJwz9n5MhrHfv1wZLJLtzLl2BnxLJ9PpM6Jd_7U`
+      'Authorization': `Bearer <dejar token aqui>`
     }
   });
 }

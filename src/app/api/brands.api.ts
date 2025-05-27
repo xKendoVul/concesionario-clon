@@ -28,7 +28,7 @@ export async function updateBrand(brandData: BrandData) {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
-      'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4MjM0MTE1LCJleHAiOjE3NDgyNDEzMTV9.dKuXmJwz9n5MhrHfv1wZLJLtzLl2BnxLJ9PpM6Jd_7U`
+      'Authorization': `Bearer <dejar token aqui>>`
     },
     body: JSON.stringify(brandData),
   });

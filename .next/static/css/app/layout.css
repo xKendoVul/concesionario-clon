@@ -758,11 +758,11 @@ video {
 .w-4 {
   width: 1rem;
 }
-.w-full {
-  width: 100%;
-}
 .w-\[180px\] {
   width: 180px;
+}
+.w-full {
+  width: 100%;
 }
 .min-w-\[8rem\] {
   min-width: 8rem;
